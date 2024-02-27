@@ -1,0 +1,134 @@
+Comandos más importantes para el manejo de la terminal:
+
+1
+pwd: imprimir el directorio en donde nos encontramos. 
+
+2
+ls: imprime archivos o carpetas dentro del cual estamos trabajando. 
+
+3
+mkdir carpetaPrueba: crea una carpeta llamada 'carpetaPrueba' en el directorio que estamos situados. Si queremos crear una carpeta que lleve espacios en su nombre se debe utilizar comillas. Por ej "PrepCourse Henry" 
+
+4
+cd: para ir hacia el directorio que contiene la carpeta o directorio en donde nos encontramos. También podemos usarla para movernos entre carpetas, por ejemplo al usar cd carpetaPrueba cambiamos de la carpeta actual hacia "carpetaPrueba"
+
+5
+touch archivo.txt : crea un archivo con nombre "archivo.txt"
+
+6
+rm archivo.txt : elimina el archivo "archivo.txt"
+
+7
+rm -r carpetaPrueba: elimina la carpeta de nombre "carpetaPrueba"
+
+
+A continuación de compartimos los comandos más usados con git:
+
+1
+git init: comando para inicializar un repositorio local. 
+
+2
+git add: comando para que nuestro repositorio sepa de la existencia de un archivo o de sus últimos cambios, no almacena las actualizaciones de forma definitiva, únicamente las guarda en algo que conocemos como “Staging Area” (área de montaje o ensayo). Se puede armar como git add ArchivoEjemplo.js (solo agrega ese archivo) o git add (agrega todos los archivos modificados de la carpeta donde estas con el punto. 
+
+3
+git commit -m "mensaje": comando para almacenar definitivamente todos los cambios que por ahora viven en el staging área. En el mensaje ponemos el mensaje que explica los cambios commiteados. 
+
+4
+git push: comando para mandar nuestros commits a un servidor remoto.
+
+5
+git status: ofrece una descripción del estado de los archivos.
+
+6
+git pull: sirve para recibir cambios de repositorio remoto a local.
+
+
+
+CLASE 3 HTML
+HyperText Markup Language (HTML) es un lenguaje de marcado (no de programación) utilizado para crear páginas web. Este tipo de código te permitirá crear una página web sencilla.
+
+Todos los archivos HTML están conformados por distintos elementos HTML. Estos elementos son componentes individuales (conocidos como etiquetas) que nos permiten darle una estructura al archivo. Por ejemplo...
+<p>esto es un texto</p>
+
+Ahora deberás escribir el código básico de un archivo HTML. Te lo dejamos a continuación...
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Mi página web</title>
+    </head>
+    <body>
+         <h1>Mi página web</h1>
+              <p>Mi nombre es {ESCRIBE TU NOMBRE}.</p>
+    </body>
+</html>
+
+Como hemos visto en la lección anterior, los elementos dentro de un archivo HTML se distinguen mediante etiquetas. Cada elemento tiene una etiqueta asociada.
+Por ejemplo, todo lo que escribamos dentro de una etiqueta <p> se transformará en texto plano dentro de nuestra página web.
+
+ETIQUETAS  "H"  viene  de head
+h+numero del 1 al  6 --- establece jerarquia entre titulos
+
+ETIQUETAS "P"
+para escribir parrafos de texto
+
+
+
+
+ETIQUETAS PARA LISTADOS
+"ol" lista ordenada 
+<ol> que abre........ </ol> que cierra
+en el medio otras etiquetas <li> list item
+
+<ul> unordered list elementos no ordenados no numerados
+
+ETIQUETA HR hace una linea para separar
+no tiene etiqueta que abre y otra que cierra, se cierra a si misma. se agrega espacio despues del hr y una /> va al final de los segmentos
+
+TODAS LAS ETIQUETAS ANTERIORES OCUPAN TODO EL ANCHO DE LA PAGINA AUNQUE NO SE VEA O NO ESTE COMPLETA LA LINEA, EL SIGUIENTE ELEMENTO SE VE ABAJO
+SI QUIERO QUE EL TEXTO VAYA DE SEGUIDO EN LA MISMA LINEA CON DISTINTOS ELEMENTO USO ETIQUETA "SPAN
+
+
+
+
+Etiquetas de bloques
+
+Las etiquetas de bloque son elementos que se utilizan para crear secciones de contenido en una página web. Estas etiquetas tienen un comportamiento por defecto que hace que ocupen todo el ancho disponible de su contenedor principal y se colocan en una línea nueva, lo que crea un efecto de separación vertical en el diseño de la página."
+para estructurar el contenido en el codigo mas alla de lo visual, establecer un contenedor
+
+<header>contenido de encabezado de la pagina <header>todo el codigo que va en el encabezado que quiera incluir</header>
+
+<main> contenido principal de la pagina</main>
+<footer> pie de pagina</footer> debajo del contenido principal
+<section> para hacer secciones
+<article> para subdividir secciones
+<div> para agrupar elementos que yo quiera, como cajita universal
+
+
+
+Etiquetas de contenido
+
+Las etiquetas de contenido son aquellas que se utilizan para marcar contenido dentro de un documento HTML. Estas etiquetas permiten definir diferentes tipos de elementos, como texto, imágenes, enlaces, listas, tablas, párrafos y más, para que el navegador web pueda interpretar y mostrar el contenido de manera adecuada. 
+
+<img> para agregar imagenes, se cierra a si misma como hr. dice que quiero agregar una imagen, pero para decirle qué imagen tengo que agregarle un artibuto de una etiqueta
+en este caso atributo: src ------> <img src="./archivo" />
+
+para meter un vinculo tipo enlace: <a + atributo href> --->  <a href="./nombrearchivo">tituloboton</a>
+
+<form> elementos tipicos de contacto, caja texto nombre apellido edad opciones para marcar etc
+dentro de form <input /> se cierra a si misma, da un campo para que el usuario pueda ingresar informacion, predeterminadamente abre una cajita de texto. puede tener distintos tipos no solo texto, se ingresa a traves de atributos
+<input type="text o button o date etc" />
+ATRIBUTO PLACEHOLDER dentro de etiqueta input para que aparezca dentro del cmapo la referencia del contenido a rellenar, en lugar de usar la etiqueta label
+
+etiqueta LABEL para los inputs para decir que hay que poner en el espacio, como titulo
+name: atributo dentro de input para decirle al codigo que es lo que va a ingresar el usuario, que informacion
+para vinvular el label con el name hay que darle a label un atributo "FOR" seria <label for="nombre que le puse al name">
+
+
+
+
+
+
+
